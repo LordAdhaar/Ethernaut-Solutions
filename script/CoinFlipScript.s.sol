@@ -9,6 +9,7 @@ import "forge-std/console.sol";
 // The logic of the Player contract needs to be in a separate contract to properly interact with the CoinFlip contract.
 // Placing the logic directly in the run function does not maintain state correctly, hence the consecutiveWins variable was not updating.
 // But I do not fully understand why
+// And yes you have to manually cal it 10 times :)
 
 contract Player {
     uint256 constant FACTOR =
