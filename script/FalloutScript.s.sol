@@ -12,7 +12,7 @@ contract FalloutScript is Script {
     }
 
     function interactions() public {
-        fallout = Fallout(0xEc7f7274aF42A7cB53e3CC562BaDD43AeBddb364);
+        fallout = Fallout(0x542F45e871C9474d5715f6f38FB621e237AABbe1);
         vm.startBroadcast();
         fallout.Fal1out{value: 0.0001 ether}();
         vm.stopBroadcast();
