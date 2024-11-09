@@ -1,0 +1,70 @@
+{
+  "transactions": [
+    {
+      "hash": "0xb9843a29eb4a16738eff78bdcd8fb403f37ce800d96bbc7e551b34927ec1ed7d",
+      "transactionType": "CREATE",
+      "contractName": "AttackKing",
+      "contractAddress": "0x21e3b8da2b3ba5d974421e4d57a7de965ccabf21",
+      "function": null,
+      "arguments": null,
+      "transaction": {
+        "from": "0xb99822596ada5ff795af305d98818e9ee4650c63",
+        "gas": "0x32dd3",
+        "value": "0x0",
+        "input": "0x6080604052348015600f57600080fd5b50600080546001600160a01b0319167327eed384fe5f12adf320d21c0a2283451bcfc532179055610186806100456000396000f3fe6080604052600436106100345760003560e01c8063787be10514610039578063b60d42881461004e578063cc181ca814610050575b600080fd5b34801561004557600080fd5b5061004e61008c565b005b34801561005c57600080fd5b50600054610070906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b600080546040516001600160a01b039091169066038d7ea4c68000908381818185875af1925050503d80600081146100e0576040519150601f19603f3d011682016040523d82523d6000602084013e6100e5565b606091505b505090508061014d5760405162461bcd60e51b815260206004820152602a60248201527f41747461636b4b696e673a6368616e67654b696e672829207472616e736163746044820152691a5bdb8819985a5b195960b21b606482015260840160405180910390fd5b5056fea264697066735822122046e1e766cd630033f62b360bfdb830ae5494302fcc434b4d5c754414e7a5ae8764736f6c634300081b0033",
+        "nonce": "0x86",
+        "chainId": "0xaa36a7"
+      },
+      "additionalContracts": [],
+      "isFixedGasLimit": false
+    },
+    {
+      "hash": "0x50c6df62b237195b7e8f5c507c0c1ea9269ccc893fb08c6730a8497ae63e9150",
+      "transactionType": "CALL",
+      "contractName": "AttackKing",
+      "contractAddress": "0x21e3b8da2b3ba5d974421e4d57a7de965ccabf21",
+      "function": "fund()",
+      "arguments": [],
+      "transaction": {
+        "from": "0xb99822596ada5ff795af305d98818e9ee4650c63",
+        "to": "0x21e3b8da2b3ba5d974421e4d57a7de965ccabf21",
+        "gas": "0x722a",
+        "value": "0x38d7ea4c68000",
+        "input": "0xb60d4288",
+        "nonce": "0x87",
+        "chainId": "0xaa36a7"
+      },
+      "additionalContracts": [],
+      "isFixedGasLimit": false
+    },
+    {
+      "hash": null,
+      "transactionType": "CALL",
+      "contractName": "AttackKing",
+      "contractAddress": "0x21e3b8da2b3ba5d974421e4d57a7de965ccabf21",
+      "function": "changeKing()",
+      "arguments": [],
+      "transaction": {
+        "from": "0xb99822596ada5ff795af305d98818e9ee4650c63",
+        "to": "0x21e3b8da2b3ba5d974421e4d57a7de965ccabf21",
+        "gas": "0x10bb9",
+        "value": "0x0",
+        "input": "0x787be105",
+        "nonce": "0x88",
+        "chainId": "0xaa36a7"
+      },
+      "additionalContracts": [],
+      "isFixedGasLimit": false
+    }
+  ],
+  "receipts": [],
+  "libraries": [],
+  "pending": [
+    "0xb9843a29eb4a16738eff78bdcd8fb403f37ce800d96bbc7e551b34927ec1ed7d",
+    "0x50c6df62b237195b7e8f5c507c0c1ea9269ccc893fb08c6730a8497ae63e9150"
+  ],
+  "returns": {},
+  "timestamp": 1731165034,
+  "chain": 11155111,
+  "commit": "d36e3a0"
+}
