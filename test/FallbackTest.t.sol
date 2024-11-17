@@ -32,7 +32,7 @@ contract FallbackTest is Test {
 
         vm.startPrank(changeOwner);
         fallbackContract.contribute{value: 0.0001 ether}();
-        (success, ) = address(fallbackContract).call{value: 0.1 ether}("");
+        (success,) = address(fallbackContract).call{value: 0.1 ether}("");
         owner = fallbackContract.owner();
         vm.stopPrank();
 
@@ -45,7 +45,7 @@ contract FallbackTest is Test {
 
         vm.startPrank(changeOwner);
         fallbackContract.contribute{value: 0.0001 ether}();
-        (sucess, ) = address(fallbackContract).call{value: 0.1 ether}("");
+        (sucess,) = address(fallbackContract).call{value: 0.1 ether}("");
         fallbackContract.withdraw();
         vm.stopPrank();
 

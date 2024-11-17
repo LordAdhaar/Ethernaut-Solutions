@@ -13,14 +13,10 @@ contract FallbackScript is Script {
     }
 
     function interactions() public {
-        fallbackContract = Fallback(
-            payable(0x6D95D38b06102f48D9346B2976aDE47e49b8A226)
-        );
+        fallbackContract = Fallback(payable(0x6D95D38b06102f48D9346B2976aDE47e49b8A226));
         vm.startBroadcast();
         fallbackContract.contribute{value: 0.0001 ether}();
-        (bool success, ) = address(fallbackContract).call{value: 0.0001 ether}(
-            ""
-        );
+        (bool success,) = address(fallbackContract).call{value: 0.0001 ether}("");
         console.log(success);
         fallbackContract.withdraw();
         vm.stopBroadcast();

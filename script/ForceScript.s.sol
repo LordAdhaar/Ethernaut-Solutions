@@ -14,9 +14,7 @@ contract ForceScript is Script {
     function depositETH() public {
         vm.startBroadcast();
         selfDestruct = new SelfDestruct();
-        (bool success, ) = payable(address(selfDestruct)).call{
-            value: 0.001 ether
-        }("");
+        (bool success,) = payable(address(selfDestruct)).call{value: 0.001 ether}("");
         require(success, "Tx failed");
         selfDestruct.destroy();
         vm.stopBroadcast();

