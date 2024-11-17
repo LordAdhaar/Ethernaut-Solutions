@@ -39,7 +39,8 @@ contract ShopTest is Test {
     function testBuyerPrice() public {
         vm.prank(address(buyer));
         shop.buy();
-
+        console.log(makeAddr("token1"));
+        console.log(makeAddr("token2"));
         assertEq(shop.isSold(), true);
         assertEq(shop.price(), 10);
     }
