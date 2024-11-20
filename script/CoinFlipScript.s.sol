@@ -10,9 +10,9 @@ import "forge-std/console.sol";
 // Placing the logic directly in the run function does not maintain state correctly, hence the consecutiveWins variable was not updating.
 // But I do not fully understand why
 // And yes you have to manually cal it 10 times :)
-
 contract Player {
-    uint256 constant FACTOR = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
+    uint256 constant FACTOR =
+        57896044618658097711785492504343953926634992332820282019728792003956564819968;
 
     constructor(CoinFlip _coinFlipInstance) {
         uint256 blockValue = uint256(blockhash(block.number - 1));
@@ -23,7 +23,8 @@ contract Player {
 }
 
 contract CoinFlipSolution is Script {
-    CoinFlip public coinflipInstance = CoinFlip(0x5CEC79809cd58244809e0ccC6319542e423D5380);
+    CoinFlip public coinflipInstance =
+        CoinFlip(0x5CEC79809cd58244809e0ccC6319542e423D5380);
 
     function run() external {
         vm.startBroadcast();
